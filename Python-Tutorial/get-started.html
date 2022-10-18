@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,200&family=Roboto+Mono:wght@335&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
+    <title>Python Tutorial</title>
+</head>
+<body>
+<main>
+    <!--Navigation bar-->
+    <nav class="navbar">
+        <script src="./navigation-bar.js"></script>
+    </nav>
+    <!--Desrciption of topic-->
+    <section class="description">
+        <h1>เริ่มต้นการเขียน Python</h1>
+        <hr>
+        <h2>ติดตั้ง Python</h2>
+        <ol>
+            <li>ไปที่ <a class="link" href="https://www.python.org/">python.org</a> คลิก download</li>
+            <img class="illustration" src="./Pictures/download.jpg">
+            <li>ติดตั้งโปรแกรม *ติ๊กถูกที่ Add Python to PATH ด้วย</li>
+            <img class="illustration" src="./Pictures/installation.png">
+            <li>ทำการติดตั้งให้เรียบร้อย และรอจนโหลดเสร็จ *อาจต้อง restart computer</li>
+        </ol>
+        <br>
+        <h2>*optional ติดตั้ง Visual Studio Code ( Text Editor Software)</h2>
+        <p>ไปที่ <a class="link" href="https://code.visualstudio.com/">code.visualstuido.com</a> download และทำการติดตั้ง</p>
+        <p>แนะนำให้ติดตั้ง plugin ถาษา Python ใน Visual Stuido Code ด้วย</p>
+        <br>
+        <h2>ทดสอบ Python</h2>
+        <p>กดปุ่ม window เสิร์ชหา Command Prompt เปิดและพิมพ์คำสั่ง python --version</p>
+        <p>หาก Python ได้ถูกติดตั้งสำเร็จและได้ทำงาน Add PATH จะมี version ของ Python ปรากฏออกมา</p>
+        <img class="illustration" src="./Pictures/python-version.jpg">
+        <br>
+        <h2>นามสกุลไฟล์ Python</h2>
+        <p>ในการเขียนโปรแกรมภาษา Python ไฟล์โค้ดจะมีนามสถุลคือ .py</p>
+        <img class="illustration" src="./Pictures/python-file-extension.jpg"></img>
+        <br>
+        <h2>ฟังก์ชั่นคำสั่งเบื้องต้นของ Python</h2>
+        <p>print() คือฟังก์ชั่นที่ใช้แสดงผลข้อมูลออกมาทาง terminal โดยที่ภายในวงเล็บ () จะเป็นข้อมูลที่ต้องการให้ปริ้นออกมา</p>
+        <p>ข้อมุลนั้นอาจจะเป็น ตัวแปร ตัวเลข หรือข้อความก็ได้ หากเป็นตัวเลขสามารถพิมพ์ตัวเลขลงไปได้เลย</p>
+        <p>แต่หากเป็นข้อความจะต้องอยู่ในเครื่องหมาย Quote (') หรือ Double Quote (")</p>
+        <img class="illustration" src="./Pictures/python-print.png">
+    </section>
+    <!--Python embeded code editor-->
+    <section class="right-panel">
+        <iframe 
+        src="https://trinket.io/embed/python/edd948bf08" 
+        frameborder="0" 
+        allowfullscreen></iframe>
+    </section>
+</main>
+</body>
+</html>
