@@ -1,0 +1,17 @@
+:root {
+    --footer1: #4343d2;
+    --footer2: #19094a;
+}
+.mainFooter {
+	position: sticky;
+	top: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(var(--footer1), var(--footer2));
+	color: #fff;
+	padding: 2rem;
+}
+.mainFooter h1 {
+	margin-bottom: 1rem;
+}

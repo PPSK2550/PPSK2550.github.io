@@ -1,0 +1,336 @@
+* { padding: 0; margin: 0; box-sizing: border-box }
+
+:root {
+	--topTopic1: #6d6ded69;
+	--topTopic2: #4444d5;
+
+	--homeSection: #4d5c87;
+
+	--readBtn: #1e3bc1;
+	--readBtnHover: #43a5d5;
+
+	--bgColor: #190c3b;
+}
+body {
+	background-color: var(--bgColor);
+}
+@keyframes intro {
+	from { margin-top: 100vh; }
+	to { margin-top: 0; }
+}
+.contentContainer {
+	display: grid;
+	grid-template-columns: auto 80% auto;
+	animation: intro 1s;
+}
+.contentContainer main {
+	grid-column: 2;
+	background-color: #fff;
+	box-shadow: 0 0 10px #000;
+	min-height: 100vh;
+}
+.topPicImg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+	background: url("./Pictures/iot6.jpg");
+	background-size: 1550px auto;
+	box-shadow: inset 0 -30px 50px #000;
+}
+.topTopic {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 3rem;
+	background: linear-gradient(var(--topTopic1), var(--topTopic2));
+	text-align: center;
+	color: #fff;
+	border-radius: 100%;
+	aspect-ratio: 1 / 1;
+}
+.topTopic h1 {
+	font-size: 5rem;
+}
+.homeSection {
+	display: grid;
+	padding: 2rem 1rem 2rem 1rem;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;
+	background-color: var(--homeSection);
+}
+.homeTopic {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	width: 90%;
+	border-radius: 8px;
+	background-color: #fff;
+	box-shadow: 0 0 10px #000;
+}
+.homeTopic h1 { 
+	font-size: 1.5rem;
+}
+.homeTopic img {
+	width: 350px;
+	height: 200px;
+	border-radius: 4px;
+	object-fit: cover;
+	transition: 0.5s;
+}
+.homeTopic img:hover {
+	transform: scale(1.1);
+}
+.homeTopic a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.1rem;
+	padding: 10px;
+	text-align: center;
+	background-color: var(--readBtn);
+	border-radius: 3px;
+	transition: 0.5s;
+	margin-bottom: 1rem;
+}
+.homeTopic a:hover {
+	background-color: var(--readBtnHover);
+}
+.gallerySlide {
+	display: grid;
+	grid-template-columns: 20% auto;
+	margin: 1rem 0 1rem 0;
+}
+.gallerySlide h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to right ,#3855f5, #577ef3);
+	border: 4px solid cyan;
+	border-top: 0; border-bottom: 0; border-left: 0;
+	color: #fff;
+	font-size: 1.8rem;
+}
+.gallerySlide marquee {
+	background: linear-gradient(to right, black, #5cb9ff, #0f1992);;
+}
+.gallerySlide marquee img {
+	width: 250px;
+	height: 150px;
+	object-fit: cover;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	margin: 1rem;
+	transition: 0.5s;
+}
+.gallerySlide marquee img:hover {
+	transform: scale(1.1);
+}
+.dataContainer {
+	background-color: var(--sideBarHover);
+	padding: 2.5rem;
+
+	--topicH1: #5472cb;	
+	--topicH1dow: #1b1c5d; 
+}
+.data {
+	background-color: #fff;
+	box-shadow: 0 0 10px #000;
+	border-radius: 8px;
+	padding: 2rem;
+}
+.data h1 {
+	background-color: var(--topicH1);
+	font-size: 3rem;
+	padding: 1rem;
+	text-indent: 2rem; 
+	border-radius: 8px;
+	box-shadow: 0 5px 5px var(--topicH1dow);
+}
+.data h2 {
+	background-color: var(--topicH1);
+	font-size: 1.6rem;
+	width: 60%;
+	padding: 1rem;
+	text-indent: 1rem; 
+	border-radius: 8px;
+	box-shadow: 0 5px 5px var(--topicH1dow);
+}
+.sepLine {
+	height: 5px;
+	width: 100%;
+	background-color: var(--topicH1);
+	margin-top: 1rem;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+}
+.bigPic {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bigPic img {
+	object-fit: cover;
+	max-width: 80%;
+	border-radius: 12px;
+	border: 1px solid var(--sideBarBorder);
+}
+.data p {
+	font-size: 1.2rem;
+	text-indent: 3rem;
+	padding: 1rem;
+	color: #101010;
+}
+.data i {
+	font-size: 1.2rem;
+	color: #101010;
+}
+.data p em {
+	font-size: 1.4rem;
+	color: var(--sideBarHover);
+	font-weight: bold;
+}
+.data form {
+	display: flex;
+	flex-direction: column;
+}
+.memberInput {
+	display: grid;
+	grid-template-columns: 15% auto;
+	margin: 8px;
+}
+.memberInput label {
+	font-size: 1.4rem;
+}
+.memberInput input {
+	border: 2px solid blue;
+	padding: 3px;
+	font-size: 1rem;	
+	background-color: #fff;
+	transition: 0.5s;
+	max-width: 400px;
+	border-radius: 4px;
+}
+.memberInput > label {
+	padding: 3px;
+	font-size: 1.4rem;	
+	background-color: rgb(79, 101, 230);
+	border-radius: 4px;
+	margin-right: 1rem;
+	color: #fff;
+	max-height: 50px;
+}
+#location {
+	height: 200px;
+}
+.memberInput input:focus {
+	outline: 1px solid cyan;
+}
+.data form input[type="submit"] {
+	font-size: 3rem;
+	padding: 4px;
+	border-radius: 4px;
+	border: none;
+	background-color: #2e35e6;
+	transition: 0.5s;
+	margin-top: 1rem;
+	color: #fff;
+}
+.data form input[type="submit"]:hover {
+	background-color: #5282c5;
+	transform: scale(1.05);
+	color: #000;
+}
+.downloadGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 1rem;
+	column-gap: 1rem;
+}
+.downloadGrid a * {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: 2px solid var(--sideBarBorder);
+	border-radius: 8px;
+	transition: 0.5s;
+}
+
+.downloadGrid a *:hover {
+	transform: scale(1.05);
+}
+.creatorBox {
+	display: grid;
+	grid-template-columns: 40% auto;
+	background-color: #dddddd;
+	padding: 2rem;
+	margin: 1rem;
+	border-radius: 8px;
+}
+.creatorLogo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #2e34e6a9;
+	scrollbar-width: 300px;
+	aspect-ratio: 1 / 1;
+	padding: 1rem;
+	margin-right: 1rem;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.creatorLogo * {
+	transform: translateY(40px);
+}
+.head {
+	width: 100px;
+	aspect-ratio: 1 / 1;
+	border-radius: 100%;
+	background-color: var(--bgColor);
+}
+.body {
+	width: 200px;
+	height: 250px;
+	background-color: var(--bgColor);
+	border-radius: 12px;
+}
+.creatorText {
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.pictureShow {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 101;
+}
+.pictureContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.showPic {
+	max-width: 80vw;
+	max-height: 80vh;
+	border-radius: 8px;
+	object-fit: cover;
+}
+.closeBtn {
+	position: fixed;
+	display: block;
+	top: 0;
+	right: 0;
+	width: 50px;
+	aspect-ratio: 1 / 1;	
+}

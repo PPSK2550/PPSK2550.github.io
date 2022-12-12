@@ -1,0 +1,63 @@
+:root {
+	--topWelcome1: #153171;
+	--topWelcome2: #164bad;
+
+	--topNav1: #04048a;
+	--topNav2: #3b5989;
+
+	--logoBorder1: #55cefc;
+}
+
+
+.topWelcome {
+	font-size: 1.2rem;
+	padding: 4px;
+	color: #fff;
+	background: linear-gradient(var(--topWelcome1), var(--topWelcome2));
+
+}
+.topNav {
+	position: sticky;
+	top: 0;
+	display: grid;
+	grid-template-columns: 60% auto;
+	background: linear-gradient(to right, var(--topNav1), var(--topNav2));
+	z-index: 100;
+}
+.logoNav {
+	margin: 2px;
+	margin-left: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3px;
+	background-color: #fff;
+	border: 2px solid var(--logoBorder1);
+	border-radius: 100%;
+	width: 50px;
+	aspect-ratio: 1 / 1;
+}
+.topNav ul {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	place-items: center;
+	list-style: none;
+}
+.topNav ul li {
+	width: 100%;
+	height: 100%;
+}
+.topNav ul li a {
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5s;
+}
+.topNav ul li a:hover {
+	background-color: var(--topWelcome2);
+}
